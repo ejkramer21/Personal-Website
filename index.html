@@ -1,52 +1,164 @@
+<!-- Checking out the code? Nosy nerd lol. Enjoy ig, just know it's still a work in progress. :) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joy Kramer - Personal Website</title>
+    <title>Erin Joy Kramer</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 <body>
-<header>  
-    <nav>
-    
-    <ul id="tabs">
-        <li id="About"><a href="index.html">About Me</a></li>
-        <li id="Projects"><a href="#">Projects</a>
-            <ul>
-                <li id="Quiz Builder"><a href="">Quiz Builder</a></li>
-                <li id="Photo Album"><a href="">Photo Album</a></li>
-            </ul>
-        </li>
-        <li id="Hobbies"><a href="">Hobbies and Other</a></li>
-        <li id="Github"><a href="https://github.com/ejkramer21">Github</a></li>
+    <nav id="nav-bar">
+    <ul>
+        <button id="Github" onclick="window.location.href='https://github.com/ejkramer21'">Github</button>
+        <!-- <button id="Projects">Projects</button>  -->
+        <button id="Hobbies">Hobbies</button>
+        <button id="Home">Home</button>
     </ul>
     </nav>
-    <p id="myName">Joy Kramer</p>
-</header>
-    <div id="AboutMe">
-        <section>
-            About Me
-            <br>
-            Hi
-        </section>
+    <header>  
+        <h1 id = "name">
+            Erin Joy Kramer
+        </h1>
+    </header>
+    <div id="home-section">
+
+    <div id="AboutMe" >
+    <h2 style="margin:10px">
+        About Me
+    </h2>
+    <div style="margin:10px">
+        Hi, thanks so much for visiting my personal website! Just a little about me,
+        I'm a sophomore at Purdue University studying Computer Science with
+        concentrations in Software Engineering and Security. Some of my hobbies
+        include reading(click <a id="book-link"><u>here</u></a> for some book reccomendations),
+        <a id="travel-link"><u>travel</u></a>, and cooking I started this website in the summer of 2022 and I am slowly adding
+        to here to document my learning journey.
     </div>
-    <div id="Proj">
-        <h2>
-            Projects
-        </h2>
-        <section id="Quiz">
-            Quiz
-        </section>
-        <section id="Photo">
-            Photo
-        </section>
+    <img src="e_k__07new.jpg" id="Photo">
+    <img src="IMG_8558.JPG" id="other">
+    <img src="0203221528b.jpg" id="otherother">
+    </div>  
+
+<section class="skill-grid">
+<section id="CurrentSkills">
+    <h2 id="CurrentHead">Current Skills</h2>
+    <div id="Coding">
+        <h3>Coding</h3>
+            <ul>
+                <li>Java</li>
+                <li>Python</li>
+                <li>C</li>
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>JavaScript(basic)</li>
+            </ul>
     </div>
-    <div id="other">
-        Other
+    <div id="Other">
+        <h3>Other</h3>
+            <ul>
+                <li>Spanish
+                    <ul>
+                        <li>Fluent Reading/Writing</li>
+                        <li>Conversational Speaking</li>
+                    </ul>
+                </li>
+                <li>Associate Training</li>
+            </ul>
     </div>
-    
+    </section>
+    <section id="DevelopingSkills">
+        <h2>Developing Skills</h2>
+        <h3>Coding</h3>
+            <ul>
+                <li>C++</li>
+                <li>SQL</li>
+                <li>ARM</li>
+                <li>MERN Stack
+                    <ul>
+                        <li>MongoDB</li>
+                        <li>ExpressJS</li>
+                        <li>React.js</li>
+                        <li>Node.js</li>
+                    </ul>
+                </li>
+            </ul>
+        <h3>Other</h3>
+            <ul>
+                <li>Korean Speaking and Reading</li>
+            </ul>
+        </section>
+</section>
+</div>
+
+<div id="hobbies">
+    <section id="books">
+        <h2>Book Reccomendations</h2>
+        <h3>Nonfiction</h3>
+        <ul id="Nonfiction">
+            
+            <li>Atomic Habits</li>
+            <li>Rich Dad Poor Dad</li>
+            <li>Talking from 9 to 5: Men and Women at Work</li>
+            <li>The Intelligent Investor</li>
+            <li>The Earth is Flat</li>
+            <li>The Art of War</li>
+        </ul>
+        <h3>Fiction</h3>
+        <ul id="Fiction">
+            
+            <li>The Alchemist</li>
+            <li>The Lunar Chronicles
+                <ul>
+                    <li>Cinder</li>
+                    <li>Scarlett</li>
+                    <li>Winter</li>
+                    <li>Cress</li>
+                </ul>
+            </li>
+            <li>The Shadow Queen</li>
+            <li>Girls of Paper and Fire</li>
+            <li>Eleanor & Park</li>
+            <li>Perks of Being a Wallflower</li>
+            <li>The Lovely Bones</li>
+            <li>Holes</li>
+            <li>The Hate You Give</li>
+            <li>Turtles All the Way Down</li>
+        </ul>
+        <h3>Classics</h3>
+        <ul id="Classics">
+            
+            <li>Sense and Sensibility</li>
+            <li>Pride and Prejudice</li>
+            <li>Emma</li>
+            <li>The Complete Poems of Emily Dickinson</li>
+        </ul>
+        <ul id="Other">
+            <li>50 Essays: A Portable Anthology</li>
+        </ul>
+    </section>
+    <section id="travel">
+        <h2>Travel</h2>
+        <div>
+        Everyone likes pictures, right?
+        </div>
+        <div id="travel-pics">
+            <img src="TravelPhotos\0515220905_HDR.jpg">
+            <img src="TravelPhotos\0524221048_HDR.jpg">
+            <img src="TravelPhotos\0515221548_HDR.jpg">
+            <img src="TravelPhotos\0515221949_HDR.jpg">
+            <img src="TravelPhotos\0515221901_HDR.jpg">
+            <img src="TravelPhotos\0515221637_HDR.jpg">
+            <img src="TravelPhotos\0524221026a_HDR.jpg">
+            <img src="TravelPhotos\0524221315_HDR.jpg">
+            
+        </div>
+    </section>
+</div>
+
+    <script src="script.js" type="text/javascript">
+        
+    </script>
 </body>
 </html>

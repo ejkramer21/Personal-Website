@@ -1,30 +1,90 @@
-var about = document.getElementById("AboutMe")
-var projects = document.getElementById("Proj")
-var hobbies = document.getElementById("other")
+        const home = document.querySelector("#Home");
+        // const projects = document.querySelector("#Projects");
+        const hobbies = document.querySelector("#Hobbies");
+        const git = document.querySelector("#Github");
+        const homediv = document.querySelector("#home-section");
+        const hobbiesdiv=document.querySelector("#hobbies");
+        const booklink = document.querySelector("#book-link");
+        const travellink=document.querySelector("#travel-link");
 
-function openAbout() {
-    about.style.transform="transalteX(0)";
-    projects.style.transform="translateX(100%)";
-    hobbies.style.tranform="translateX(100%)";
-    about.style.color="#FFFFFF";
-    projects.style.color="#000000";
-    hobbies.style.transform="#000000"
-}
+        travellink.addEventListener("click", (e)=>{
+            home.style.color="#000000";
+            // projects.style.color="#000000";
+            hobbies.style.color="#FFFFFF";
+            git.style.color="#000000";
+            home.style.background="transparent";
+            // projects.style.background="transparent";
+            hobbies.style.background="purple";
+            git.style.background="transparent";
+            homediv.style.display="none";
+            hobbiesdiv.style.display="flex";
+            hobbiesdiv.style.transform="TranslateY(0%)";
+        });
 
-function openProjects() {
-    about.style.transform="transalteX(100%)";
-    projects.style.transform="translateX(0)";
-    hobbies.style.tranform="translateX(100%)";
-    about.style.color="#000000";
-    projects.style.color="#FFFFFF";
-    hobbies.style.transform="#000000"
-}
+        booklink.addEventListener("click",(e)=>{
+            home.style.color="#000000";
+            // projects.style.color="#000000";
+            hobbies.style.color="#FFFFFF";
+            git.style.color="#000000";
+            home.style.background="transparent";
+            // projects.style.background="transparent";
+            hobbies.style.background="purple";
+            git.style.background="transparent";
+            homediv.style.display="none";
+            hobbiesdiv.style.display="flex";
+            hobbiesdiv.style.transform="TranslateY(0%)";
+        });
 
-function openHobbies() {
-    about.style.transform="transalteX(100%)";
-    projects.style.transform="translateX(100%)";
-    hobbies.style.tranform="translateX(0)";
-    about.style.color="#000000";
-    projects.style.color="#000000";
-    hobbies.style.transform="#FFFFFF"
-}
+        home.addEventListener("click", (e)=>{
+            e.preventDefault();
+            home.style.color="#FFFFFF";
+            // projects.style.color="#000000";
+            hobbies.style.color="#000000";
+            git.style.color="#000000";
+            home.style.background="purple";
+            // projects.style.background="transparent";
+            hobbies.style.background="transparent";
+            git.style.background="transparent";
+            homediv.style.display="block";
+            hobbiesdiv.style.display="none";
+        });
+
+        /*projects.addEventListener("click", (e) => {
+            home.style.color="#000000";
+            // projects.style.color="#FFFFFF";
+            hobbies.style.color="#000000";
+            git.style.color="#000000";
+            home.style.background="transparent";
+            // projects.style.background="purple";
+            hobbies.style.background="transparent";
+            git.style.background="transparent";
+            homediv.style.display="none";
+            hobbiesdiv.style.display="none";
+        });*/
+
+        hobbies.addEventListener("click", (e) => {
+            home.style.color="#000000";
+            // projects.style.color="#000000";
+            hobbies.style.color="#FFFFFF";
+            git.style.color="#000000";
+            home.style.background="transparent";
+            // projects.style.background="transparent";
+            hobbies.style.background="purple";
+            git.style.background="transparent";
+            homediv.style.display="none";
+            hobbiesdiv.style.display="flex";
+            hobbiesdiv.style.transform="TranslateY(0%)";
+        });
+
+        git.addEventListener("click", (e) => {
+            home.style.color="#000000";
+            // projects.style.color="#000000";
+            hobbies.style.color="#000000";
+            git.style.color="#FFFFFF";
+            home.style.background="transparent";
+            // projects.style.background="transparent";
+            hobbies.style.background="transparent";
+            git.style.background="purple";
+        });
+
+

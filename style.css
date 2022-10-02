@@ -1,6 +1,8 @@
+
 * {
     margin: 0;
     padding: 0;
+    cursor:default;
 }
 
 body {
@@ -8,65 +10,209 @@ body {
     background-size: cover;
 }
 
-nav {
-    width: 100%;
-    height: 50px;
-    display: inline-block;
+#name{
+    margin: 10px;
+    font-size: 50px;
+    padding-bottom: 10px;
+    margin-left: 3%;
 }
 
- #myName { 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:rgb(87, 26, 144);
-    font-size: 40px;
-    padding: 0px 10px;
-    width: 50%;
-    white-space: nowrap;
-}
-
-
-#tabs {
-    float: right;
-}
-
-
-nav ul li {
-    float: right;
-    list-style: none;
-    position: relative;
-    justify-content: space-between;
-}
-
-nav ul li a{
-    display: block;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    padding: 24px 14px;
-    text-decoration: none;
-}
-
-nav ul li ul{
-    display: block;
-    position: absolute;
+#AboutMe{
     background-color: white;
-    /* padding: 10px; */
-    border-radius: 4px 4px 4px 4px;
+    border: purple;
+    border-style: double;
+    border-width: 5px;
+    float: left;
+    justify-content: left;
+    
+    width: 40%;
+    margin-left: 3%;
 }
 
-nav ul li ul li a {
-    padding: 10px 5px;
-    background-color:white
+#Photo{
+    height: 45%;
+    width:45%;
+    margin: 10px;
+    float: left;
+    justify-content: left;
+    padding-left: 15px;
 }
 
-nav ul li ul li a:hover { 
-    background-color: grey;
+#other{
+    height: 45%;
+    width:40%;
+    margin: 10px;
+    float: right;
+    justify-content: right;
+    padding-right: 15px;
 }
 
-nav ul li ul li {
-    width: 180px;
-    border-radius: 100px; /*didn't work*/
+#otherother{
+    height: 20%;
+    width:40%;
+    margin: 10px;
+    float: right;
+    justify-content: right;
+    padding-right: 15px;
+    
 }
 
-nav ul li a:hover{
-    background-color: grey;
+u {
+    color: blue;
+    cursor: pointer;
 }
+
+#CurrentSkills {
+    background-color: white;
+    border: purple;
+    border-style: double;
+    border-width: 5px;
+    float: left;
+    justify-content: right;
+    margin-left: 5%;
+    
+}
+
+#Coding ul {
+    padding-left: 10%;
+}
+#Other ul{
+    padding-left: 10%;
+}
+#CurrentSkills h3 {
+    padding-left: 3%;
+}
+#CurrentSkills h2 {
+    padding-left: 1%;
+}
+
+#DevelopingSkills {
+    background-color: white;
+    border: purple;
+    border-style: double;
+    border-width: 5px;
+    float: left;
+    margin-left: 5%;
+    /* width: 20%; */
+    margin-top: 10px;
+}
+
+#DevelopingSkills h3 {
+    padding-left: 3%;
+}
+#DevelopingSkills h2 {
+    padding-left: 1%;
+}
+
+#DevelopingSkills ul {
+    padding-left: 10%;
+    
+}
+
+
+
+button {
+    background-color: transparent;
+    border: transparent;
+    color: black;
+    font-size: medium;
+    padding: 1%;
+    float: right;
+    cursor: pointer;
+}
+
+#Home {
+    background-color: purple;
+    color: white;
+}
+
+#nav-bar {
+    /* float: right; */
+    margin-top: 10px;
+}
+
+.skill-grid{
+    display: grid;
+    width: 20%;
+    font-size:17.5px;
+}
+
+#books ul li{
+    font-size: 120%;  
+}
+
+#books ul li ul li{
+    font-size: 100%;
+}
+
+#books ul {
+    /* padding-left: 5%; */
+    padding-left: 7.5%;
+}
+
+#books h3{
+    padding-left: 3%;
+}
+#books{
+    background-color: white;
+    border: purple;
+    border-style: double;
+    border-width: 5px;
+    /* float: left; */
+    /* justify-content: left; */
+    width: 40%;
+    margin-left: 3%;
+    max-width: 30%;
+}
+#travel {
+    background-color: white;
+    border: purple;
+    border-style: double;
+    border-width: 5px;
+    /* float: left; */
+    /* justify-content: left; */
+   
+    width: 45%;
+    margin-left: 3%;
+    /*background-color: white;
+    border: purple;
+    border-style: double;
+    border-width: 5px;
+    margin-left: 5%;
+    padding-right: 10px;
+    margin: 10px;
+    margin-left: 17px;*/
+    max-width: 75%;
+    max-height: 70%;
+    position:relative;
+}
+
+#travel div{
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+#travel-pics{
+    margin: 2%;
+}
+
+#travel-pics img{
+    margin: 1%;
+    margin-top: 1%;
+    flex-wrap: wrap;  
+    max-height:5cm;
+    max-width: 33%;
+}
+#hobbies {
+    display:inline-flex;
+    display:none;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
 
